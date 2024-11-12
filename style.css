@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #4203a9, #90bafc);
+    color: #fff;
+    padding: 10px;
+
+}
+.calculator{
+    width: 100%;
+    max-width: 600px;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+.calculator h1{
+    font-size: 60px;
+}
+.calculator h1 span{
+    color: #ffff76;
+}
+.input-box{
+    margin: 40px 0;
+    padding: 35px;
+    border-radius: 10px;
+    background: rgba(255, 225, 225, 0.3);
+    display: flex;
+    align-items: center;
+
+}
+.input-box input{
+    flex: 1;
+    margin-right: 20px;
+    padding: 10px 40px;
+    border:0;
+    outline: 0;
+    font-size: 18px;
+    border-radius: 5px;
+    position: relative;
+
+}
+.input-box button{
+    background: #ffff76;
+    border: 0;
+    outline: 0;
+    padding: 15px 30px;
+    border-radius:5px;
+    font-weight: 600;
+    color: #333;
+    cursor: pointer;
+    font-size: 1em;
+
+}
+.input-box button:hover{
+    background: #db7120;
+    border: 2px solid rgb(40, 194, 40);
+    outline: 0;
+    padding: 15px 30px;
+    border-radius:30px;
+    font-weight: 650;
+    color: #000000;
+    cursor: pointer;
+    font-size: 1.3em;
+    transition: ease-in-out 2s;
+    transition: ease-in 2s;
+
+}
+.input-box input::-webkit-calendar-picker-indicator{
+    top:0 ;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    position: absolute;
+    background: calc(100% -10px);
+    background-size: 30px;
+    cursor: pointer;
+
+}
+#result{
+    color: black;
+    background: linear-gradient(135deg, #de832d, #e5db12);
+    border: 2px solid black;
+    border-radius: 1em;
+    font-size:2em;
+    padding: 15px 30px;
+
+}
+#result span{
+    color: #000000;
+    background: linear-gradient(135deg, #703fbe, #90bafc);
+    border: 2px solid black;
+    border-radius: 1em;
+}
+.note {
+    float: left;
+    font-size: 3em;
+    font-family: sans-serif;
+    color: black;
+    right: -10px;
+}
